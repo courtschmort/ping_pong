@@ -8,4 +8,7 @@ describe('#ping_pong') do
   it("replaces numbers divisible by three with 'ping'") do
     expect(3.ping_pong).to(eq([1, 2, "ping"]))
   end
+  it("replaces numbers divisible by five with 'pong'") do
+    expect(5.ping_pong).to(eq([1, 2, "ping", 4, "pong"]))
+  end
 end
