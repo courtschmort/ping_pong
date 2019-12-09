@@ -1,10 +1,14 @@
 class Fixnum
-  def to_array()
+  def ping_pong()
     x = 0
     array = []
     while (x < self)
       x += 1
-      array.push(x)
+      if x % 3 === 0
+        array.push("ping")
+      else
+        array.push(x)
+      end  
     end
     array
   end
